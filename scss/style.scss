@@ -1,8 +1,9 @@
 $theme-colors: (
-    "primary":       #ec5242,
-    "secondary":     #f7f7f7,
-    "light":         #fff,
-    "dark":          #5f5f5f,
+  "primary":       #ec5242,
+  "secondary":     #f7f7f7,
+  "light":         #fff,
+  "dark":          #414246
+  ,
 );
 
 $card-border-radius:0;
@@ -15,13 +16,13 @@ $h5-font-size:$font-size-base * 1.25;
 $h6-font-size:$font-size-base;
 
 .card-text {
-    font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .5,
+  1: $spacer * 0.5,
   2: $spacer,
   3: $spacer * 1.5,
   4: $spacer * 2.5,
@@ -29,14 +30,79 @@ $spacers: (
 );
 
 .bg-dark-hopacity {
-    --bs-bg-opacity: 0.5;
-    background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
-}
-.d-flex-center {
-    flex-direction: column;
-    align-items: center !important;
+  background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
 }
 
-$btn-border-radius: 0px;
+.d-flex-center {
+  flex-direction: column;
+  align-items: center !important;
+}
+
+.hero-image {
+  background: -webkit-linear-gradient(rgba(#df3d2b, 0.5), rgba(#df3d2b, 0.5)), url('https://www.bairesdev.com/wp-content/uploads/2020/04/What-Separates-a-Good-Developer-from-a-Great-One-1024x683.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  background-image: url('https://cdn.theatlantic.com/thumbor/M7Xfc2XUVf20t_4L40FqewChFcw=/0x203:3888x2390/720x405/media/img/mt/2016/09/AP_090827085227/original.jpg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba($color: #ec5242, $alpha: 0.7);
+}
+
+.div-light-bg {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/694/632/non_2x/abstract-technology-particle-gray-background-vector.jpg');
+  background-size: cover;
+}
+
+.div-dark-bg {
+  background-image: url('https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg');
+}
+
+.mw-500 {
+  max-width: 500px;
+}
+
+.tw-400 {
+  width: 400px !important;
+}
+
+.mw-60vh {
+  max-width: 60vh;
+}
+
+.mw-50vh {
+  max-width: 50vh;
+}
+
+.img-cards {
+  filter: invert(1);
+  width: 50px;
+}
+
+.card-chess {
+  width: 200px;
+  background-image: url('https://i.stack.imgur.com/EPRek.png');
+  height: 100px;
+  background-position: top left;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+
+.card-speaker {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 150px;
+}
+
+.logo {
+  width: 50px;
+}
+
+$btn-border-radius: 0;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
