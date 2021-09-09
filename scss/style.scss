@@ -39,12 +39,19 @@ $spacers: (
 }
 
 .hero-image {
-  background: -webkit-linear-gradient(rgba(#df3d2b, 0.5), rgba(#df3d2b, 0.5)), url('https://www.bairesdev.com/wp-content/uploads/2020/04/What-Separates-a-Good-Developer-from-a-Great-One-1024x683.png');
+  background: url('https://www.bairesdev.com/wp-content/uploads/2020/04/What-Separates-a-Good-Developer-from-a-Great-One-1024x683.png');
+  //filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  max-width: 400px;
+  border: 0 !important;
+}
+
+.hero-div {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .hero-text {
@@ -68,7 +75,7 @@ $spacers: (
 }
 
 .tw-400 {
-  width: 400px !important;
+  width: 70vh !important;
 }
 
 .mw-60vh {
