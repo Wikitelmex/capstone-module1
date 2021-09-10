@@ -19,6 +19,14 @@ $h6-font-size:$font-size-base;
   font-size: 0.7rem;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'COCOGOOSE',sans-serif;
+}
+
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -40,8 +48,6 @@ $spacers: (
 
 .hero-image {
   background: url('https://www.bairesdev.com/wp-content/uploads/2020/04/What-Separates-a-Good-Developer-from-a-Great-One-1024x683.png');
-  //filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +67,19 @@ $spacers: (
   -webkit-text-fill-color: rgba($color: #ec5242, $alpha: 0.7);
 }
 
+
+
+$btn-border-radius: 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+hr {
+  opacity: 1;
+  background-color: #ec5242;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
 .div-light-bg {
   background-image: url('https://static.vecteezy.com/system/resources/previews/000/694/632/non_2x/abstract-technology-particle-gray-background-vector.jpg');
   background-size: cover;
@@ -74,7 +93,7 @@ $spacers: (
   max-width: 500px;
 }
 
-.tw-400 {
+.tw-400, .tw-400-card {
   width: 70vh !important;
 }
 
@@ -110,6 +129,81 @@ $spacers: (
   width: 50px;
 }
 
-$btn-border-radius: 0;
+.mobile-visible {
+  visibility: visible;
+}
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+.mobile-hidden {
+  visibility: hidden;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-logo {
+  justify-self: end;
+}
+
+.navbar-closer {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  right: 10px;
+}
+
+.navbar-collapse {
+  height: 100vh;
+}
+
+//desk version with mobile first aproach
+@media screen and (min-width: 992px) {
+  .navbar-collapse {
+    height: auto;
+  }
+  .tw-400-card {
+    width: 30vh !important;
+  }
+  .bg-dark-hopacity {
+    flex-direction: column;
+    margin-right: 2px;
+    align-items: center;
+  }
+  .col-2 {
+    width: 50%;
+  }
+  .text-primary-card, .text-p-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-visible {
+    visibility: hidden;
+  }
+  
+  .mobile-hidden {
+    visibility: visible;
+  }
+
+  .presenters {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .text-container-center {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .text-element-center {
+    width: 50%;
+    text-align: center;
+  }
+}

@@ -7,6 +7,9 @@
     <!-- Bootstrap CSS -->
     <link href="./dist/css/style.css" rel="stylesheet">
 
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet" type="text/css"/>
+
     <title>Capstone Module 1 - About</title>
   </head>
   <body>
@@ -21,6 +24,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="navbar-brand" href="./index.html">Global Developing Contest</a>
+                    <button class="navbar-closer mobile-visible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">&#10005;</button>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./about.html">About</a>
@@ -47,27 +51,28 @@
     <main class="text-dark">
         <!--FIRST DIV LIGHT-->
         <div class="p-2 ps-3 div-light-bg">
-            <h2 class="text-primary mt-5 pb-3">"Hello! Developers"</h2>
-            <div class="mw-500">
-                <h1 class="text-primary fw-bold fs-1 pb-3">SOFTWARE DEVELOPING CONTEST 2021</h1>
+            <h2 class="text-primary mt-5 pb-3 mobile-visible">"Hello! Developers"</h2>
+            <div class="tw-400 text-container-center">
+                <h1 class="text-primary fw-bold fs-1 pb-3 text-element-center">SOFTWARE DEVELOPING CONTEST 2021</h1>
+                <div class="card bg-secondary border-1 mw-60vh">
+                    <div class="card-body">
+                        A friendly competition celebrated in Mexico, participating countries all over the world, this december 2021
+                      </div>
+                </div>
+                
+                <br>
+                <p class="text-center mw-50vh">Feel free to contact us per Email for any further questions about this amazing event at <a class="text-black" href="mailto:wikitelmex@gmail.com">wikitelmex@gmail.com</a> </p>
             </div>
             
             
             
-            <div class="card bg-secondary border-1 mw-60vh">
-                <div class="card-body">
-                    A friendly competition celebrated in Mexico, participating countries all over the world, this december 2021
-                  </div>
-            </div>
             
-            <br>
-            <p class="text-center mw-50vh">Feel free to contact us per Email for any further questions about this amazing event at <a class="text-black" href="mailto:wikitelmex@gmail.com">wikitelmex@gmail.com</a> </p>
         </div>
         
         <!--SECOND DIV light-->
         <div class="bg-light p-2 text-dark ms-0 me-0 text-center border-bottom">
             <h2 class="text-center">Developing Contest Global WINNER 2020</h2>
-            <hr class="my-4 text-primary bg-primary border-5">
+            <hr>
             <p>The winner of Developing Contest Global 2020 was decided trough 3 challenges selected by the referees</p>
             <div class="card">
                 <br>
@@ -80,24 +85,27 @@
         <!--div 3 light-->
         <div class="bg-light text-dark p-2">
             <h2 class="text-center">See the past Developing Contest Global winners</h2>
-            <hr class="my-4 text-primary bg-primary border-5">
+            <hr>
             <p class="text-center"> Take a look at the last two developing contest global winner, celebrated in Rio do Janeiro and in Vienna</p>
             
-            <div class="card text-center hero-image text-light mb-2 tw-400">
-                <div class="card-body hero-div">
-                  <h3 class="card-title mt-2">2019</h3>
-                  <h6 class="card-subtitle mb-2">Winner: Japan</h6>
-                  <p class="card-text mb-2">Location: Brazil</p>
+            <div class="presenters">
+                <div class="card text-center hero-image text-light mb-2 tw-400">
+                    <div class="card-body hero-div">
+                      <h3 class="card-title mt-2">2019</h3>
+                      <h6 class="card-subtitle mb-2">Winner: Japan</h6>
+                      <p class="card-text mb-2">Location: Brazil</p>
+                    </div>
+                </div>
+    
+                <div class="card text-center hero-image text-light mb-2 tw-400">
+                    <div class="card-body hero-div">
+                      <h3 class="card-title mt-2">2019</h3>
+                      <h6 class="card-subtitle mb-2">Winner: Japan</h6>
+                      <p class="card-text mb-2">Location: Brazil</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="card text-center hero-image text-light mb-2 tw-400">
-                <div class="card-body hero-div">
-                  <h3 class="card-title mt-2">2019</h3>
-                  <h6 class="card-subtitle mb-2">Winner: Japan</h6>
-                  <p class="card-text mb-2">Location: Brazil</p>
-                </div>
-            </div>
+            
 
         </div>
 
@@ -105,7 +113,7 @@
         <div class="bg-dark text-light text-center">
             <br>
             <h2>Partner</h2>
-            <hr class="my-4 text-primary bg-primary border-5">
+            <hr>
             <div class="d-flex flex-wrap justify-content-center">
                 <h2 class="m-2">mozilla</h2>
                 <h2 class="m-2">Microsoft</h2>
@@ -113,20 +121,22 @@
                 <h2 class="m-2">Alex Dev</h2>
                 <h2 class="m-2">Udemy</h2>
             </div>
+            <br>
         </div>
 
         <br>
         <!--footer light-->
         <footer class="bg-light text-dark">
-            <div class="d-flex flex-row p-1">
-                <div class="me-2">
+            <div class="footer-info">
+                <div class="me-2 footer-logo">
                     <img class="me-1 logo" src="./assets/Logo.svg" alt="">
                 </div>
                 <div>
-                    <p><small>2021 Alex Dev Mexico.</small></p>
-                    <p><small>All Rights Reserved</small></p>
+                    <p><small>2021 Alex Dev Mexico. All Rights Reserved</small></p>
+                    <p class="mobile-hidden"><small>Alex Dev company, is a non-profit company, for any purpose related to this, please contact wikitelmex@gmail.com</small></p>
                 </div>
             </div>
+            br
         </footer>
         
     </main>
