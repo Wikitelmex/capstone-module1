@@ -23,8 +23,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1,h2,h3,h4,h5 {
-  font-family: 'COCOGOOSE',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
 $spacer: 1rem;
@@ -67,8 +71,6 @@ $spacers: (
   -webkit-text-fill-color: rgba($color: #ec5242, $alpha: 0.7);
 }
 
-
-
 $btn-border-radius: 0;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -93,7 +95,8 @@ hr {
   max-width: 500px;
 }
 
-.tw-400, .tw-400-card {
+.tw-400,
+.tw-400-card {
   width: 70vh !important;
 }
 
@@ -164,18 +167,23 @@ hr {
   .navbar-collapse {
     height: auto;
   }
+
   .tw-400-card {
     width: 30vh !important;
   }
+
   .bg-dark-hopacity {
     flex-direction: column;
     margin-right: 2px;
     align-items: center;
   }
+
   .col-2 {
     width: 50%;
   }
-  .text-primary-card, .text-p-card {
+
+  .text-primary-card,
+  .text-p-card {
     width: 100%;
     text-align: center;
   }
@@ -183,7 +191,7 @@ hr {
   .mobile-visible {
     visibility: hidden;
   }
-  
+
   .mobile-hidden {
     visibility: visible;
   }
@@ -201,7 +209,7 @@ hr {
     align-items: center;
     flex-direction: column;
   }
-  
+
   .text-element-center {
     width: 50%;
     text-align: center;
