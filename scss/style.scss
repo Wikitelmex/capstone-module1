@@ -19,20 +19,6 @@ $h6-font-size:$font-size-base;
   font-size: 0.7rem;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-}
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Ubuntu', sans-serif;
-}
-
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -216,4 +202,16 @@ hr {
     width: 50%;
     text-align: center;
   }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu', sans-serif;
 }
