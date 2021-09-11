@@ -34,6 +34,9 @@ To get a local copy of the repository please run the following commands on your 
 
 Note 1. I used Bootstrap, that was transpiled in dist/css file joining with my SCSS file where I'm Theming bootstrap, but due the live demo need the transpiled files (style.css) I must to avoid  .gitignoring the transpiled file (that has a lot of linters error because boostrat code). And just lintering about my Style.SCSS.
 
+Note 2. For some reason, the live demo doesn't load some font families, but if you run in local it's ok
+![screenshot](./assets/screen-font.png)
+
 ## Explaining Project Video
 
 https://www.loom.com/share/850396f46efe4781a2bc337fda30cdea
