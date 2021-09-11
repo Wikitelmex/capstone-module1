@@ -36,7 +36,7 @@ Note 1. I used Bootstrap, that was transpiled in dist/css file joining with my S
 
 ## Explaining Project Video
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/850396f46efe4781a2bc337fda30cdea" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+https://www.loom.com/share/850396f46efe4781a2bc337fda30cdea
 
 ## Authors
 
