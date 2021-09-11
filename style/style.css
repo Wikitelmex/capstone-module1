@@ -1,4 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
 .card-text {
   font-size: 0.7rem;
 }
@@ -16,7 +15,7 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: 'COCOGOOSE', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .bg-dark-hopacity {
