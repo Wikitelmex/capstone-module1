@@ -31,6 +31,7 @@ $spacers: (
 
 .bg-dark-hopacity {
   background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
+  width: 360px;
 }
 
 .d-flex-center {
@@ -85,7 +86,7 @@ hr {
 
 .tw-400,
 .tw-400-card {
-  width: 70vh !important;
+  max-width: 80vh !important;
 }
 
 .mw-60vh {
@@ -150,6 +151,10 @@ hr {
   height: 100vh;
 }
 
+.mobile-destroy {
+  display: none;
+}
+
 //desk version with mobile first aproach
 @media screen and (min-width: 992px) {
   .navbar-collapse {
@@ -157,7 +162,7 @@ hr {
   }
 
   .tw-400-card {
-    width: 30vh !important;
+    max-width: 30vh !important;
   }
 
   .bg-dark-hopacity {
@@ -184,11 +189,17 @@ hr {
     visibility: visible;
   }
 
+  .mobile-destroy {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .presenters {
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 20%;
     margin-right: 20%;
+    column-gap: 10px;
   }
 
   .text-container-center {
@@ -217,4 +228,14 @@ h3,
 h4,
 h5 {
   font-family: 'Ubuntu', sans-serif;
+}
+
+h3,
+.h3 {
+  font-size: calc(1.2rem + 0.3vw);
+}
+
+.bar-logo {
+  filter: invert(1);
+  height: 14px;
 }
