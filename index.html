@@ -1,27 +1,44 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--
+    <link  rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
+    <link  rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ubuntu:400,700'>
+    -->
+    
     <!-- Bootstrap CSS -->
-    <link href="./dist/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
 
     <title>Capstone Module 1 - Home</title>
   </head>
   <body>
-
+    <div class="bg-dark text-light mobile-destroy">
+        <ul class="navbar-nav d-flex flex-row me-5">
+            <li class="nav-item me-1"><img class="bar-logo" src="./assets/facebook.svg" alt="facebook logo"></li>
+            <li class="nav-item me-3"><img class="bar-logo" src="./assets/twitter.svg" alt="twitter logo"></li>
+            <li class="nav-item me-1">English</li>
+            <li class="nav-item me-1">My page</li>
+            <li class="nav-item me-1">Logout</li>
+        </ul>
+    </div>
     <header>
         <!--Navbar main-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container-fluid ">
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="navbar-brand" href="./index.html">Global Developing Contest</a>
+                    <button class="navbar-closer mobile-visible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">&#10005;</button>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./about.html">About</a>
@@ -49,18 +66,17 @@
         <!--FIRST DIV LIGHT-->
         <div class="p-2 ps-3 div-light-bg">
             <h2 class="text-primary mt-5 pb-3">"Hello! Developers"</h2>
-            <div class="mw-500">
+            <div class="tw-400">
                 <h1 class="text-primary hero-text fw-bold fs-1 pb-3">SOFTWARE DEVELOPING CONTEST 2021</h1>
             </div>
             
             
-            <div class="card p-1 border-0 mb-3">
-                <div class="card bg-secondary border-0">
-                    <div class="card-body">
-                        A friendly competition celebrated in Mexico, participating countries all over the world, this december 2021
-                    </div>
-                </div>
+            <div class="card bg-secondary border-1 mw-60vh">
+                <div class="card-body">
+                    A friendly competition celebrated in Mexico, participating countries all over the world, this december 2021
+                  </div>
             </div>
+            <br>
 
             <h2 class="fw-bold">2021.12.17(FRI) - 19(SUN)</h2>
             <p>@ Technology Museum of CDMX, CARSO Center</p>
@@ -69,34 +85,54 @@
         <!--SECOND DIV DARK-->
         <div class="bg-dark p-2 text-light ms-0 me-0 div-dark-bg">
             <h2 class="text-center">Main Program</h2>
-            <hr class="my-4 text-primary bg-primary border-5">
+            <hr class="text-center">
 
             <div class="container d-flex flex-row flex-wrap">
                 
-                <div class="container-sm bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400">
-                    <img class="col-2 img-cards" src="./assets/work.svg" alt="">
-                    <h2 class="text-primary  col-4">Intro</h2>
-                    <p class="text-light col-6">
+                <div class=" bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400-card">
+                    <img class="col-2 img-cards" src="./assets/work.svg" alt="card image">
+                    <h3 class="text-primary text-primary-card  col-3">Intro</h3>
+                    <p class="text-light text-p-card col-7">
                         <small>
                             some text must to be inserted here
                         </small>
                     </p>
                 </div>
 
-                <div class="container-sm bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400">
-                    <img class="col-2 img-cards" src="./assets/work.svg" alt="">
-                    <h2 class="text-primary  col-4">Contest</h2>
-                    <p class="text-light col-6">
+                <div class=" bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400-card">
+                    <img class="col-2 img-cards" src="./assets/work.svg" alt="card image">
+                    <h3 class="text-primary text-primary-card  col-3">Contest</h3>
+                    <p class="text-light text-p-card col-7">
                         <small>
                             some text must to be inserted here
                         </small>
                     </p>
                 </div>
 
-                <div class="container-sm bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400">
-                    <img class="col-2 img-cards" src="./assets/work.svg" alt="">
-                    <h2 class="text-primary  col-4">Prizing</h2>
-                    <p class="text-light col-6">
+                <div class=" bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400-card">
+                    <img class="col-2 img-cards" src="./assets/work.svg" alt="card image">
+                    <h3 class="text-primary text-primary-card  col-3">Prizing</h3>
+                    <p class="text-light text-p-card col-7">
+                        <small>
+                            some text must to be inserted here
+                        </small>
+                    </p>
+                </div>
+
+                <div class=" bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400-card">
+                    <img class="col-2 img-cards" src="./assets/work.svg" alt="card image">
+                    <h3 class="text-primary text-primary-card  col-3">Prizing</h3>
+                    <p class="text-light text-p-card col-7">
+                        <small>
+                            some text must to be inserted here
+                        </small>
+                    </p>
+                </div>
+
+                <div class=" bg-dark-hopacity row mb-1 ms-1 pt-2 pb-2 tw-400-card">
+                    <img class="col-2 img-cards" src="./assets/work.svg" alt="card image">
+                    <h3 class="text-primary text-primary-card  col-3">Prizing</h3>
+                    <p class="text-light text-p-card col-7">
                         <small>
                             some text must to be inserted here
                         </small>
@@ -107,10 +143,10 @@
 
             <div class="d-flex d-flex-center">
                 <!--this button only appears on mobile-->
-                <button class="btn btn-primary p-3"><span class="text-light">Join Developing Contest 2021</span></button>
+                <button type="button" class="btn btn-primary p-3 mobile-visible"><span class="text-light">Join Developing Contest 2021</span></button>
 
                 <!--this anchor only appears on desktop-->
-                <a href="#" class="text-light">SEE WHOLE PROGRAM</a>
+                <a href="#" class="text-light mobile-hidden">SEE WHOLE PROGRAM</a>
                 
             </div>
 
@@ -122,43 +158,54 @@
         <div class="bg-light text-dark p-2">
             <br>
             <h2 class="text-center">Featured Speakers</h2>
-            <hr class="my-4 text-primary bg-primary border-5">
+            <hr>
             
-            <div class="card mb-3 border-0 mw-500">
-                <div class="d-flex g-0 flex-nowrap">
-                  <div class="card-chess" >
-                    <img class="card-speaker img-fluid rounded-start" src="https://thumbs.dreamstime.com/b/old-man-suit-talking-portrait-senior-caucasian-businessman-white-isolated-background-old-man-suit-talking-113566335.jpg" alt="Image of speaker">
-                  </div>
-                  <div >
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text text-primary">Bekcham Professor of Entrepreneurial Legal studies ag Harvard Law School.</p>
-                      <p class="card-text">Bekcham Professor of Entrepreneurial Legal studies ag Harvard Law School.</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card mb-3 border-0 mw-500">
-                <div class="d-flex g-0 flex-nowrap">
-                  <div class="card-chess" >
-                    <img class="card-speaker img-fluid rounded-start" src="https://thumbs.dreamstime.com/b/old-man-suit-talking-portrait-senior-caucasian-businessman-white-isolated-background-old-man-suit-talking-113566335.jpg" alt="Image of speaker">
-                  </div>
-                  <div >
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text text-primary">Bekcham Professor of Entrepreneurial Legal studies ag Harvard Law School.</p>
-                      <p class="card-text">Bekcham Professor of Entrepreneurial Legal studies ag Harvard Law School.</p>
-                    </div>
-                  </div>
-                </div>
+            <!--cards container-->
+            <div class="presenters">
+                <!--Speakers loded dinamically with script.js-->
             </div>
 
 
         </div>
+
+
+        <!--div 4 dark-->
+        <div class="bg-dark text-light text-center">
+            <br>
+            <h2>Partner</h2>
+            <hr>
+            <div class="d-flex flex-wrap justify-content-center">
+                <h2 class="m-2">mozilla</h2>
+                <h2 class="m-2">Microsoft</h2>
+                <h2 class="m-2">Google</h2>
+                <h2 class="m-2">Alex Dev</h2>
+                <h2 class="m-2">Udemy</h2>
+            </div>
+            <br>
+        </div>
+
+        <br>
+        <!--footer light-->
+        <footer class="bg-light text-dark">
+            <div class="footer-info">
+                <div class="me-2 footer-logo">
+                    <img class="me-1 logo" src="./assets/Logo.svg" alt="alex dev logo">
+                </div>
+                <div>
+                    <p><small>2021 Alex Dev Mexico. All Rights Reserved</small></p>
+                    <p class="mobile-hidden"><small>Alex Dev company, is a non-profit company, for any purpose related to this, please contact wikitelmex@gmail.com</small></p>
+                </div>
+            </div>
+            
+        </footer>
         
     </main>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!--Custom Script-->
+    <script src="./script.js"></script>
+
   </body>
 </html>

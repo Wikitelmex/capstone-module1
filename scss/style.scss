@@ -31,6 +31,7 @@ $spacers: (
 
 .bg-dark-hopacity {
   background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
+  width: 360px;
 }
 
 .d-flex-center {
@@ -39,12 +40,17 @@ $spacers: (
 }
 
 .hero-image {
-  background: -webkit-linear-gradient(rgba(#df3d2b, 0.5), rgba(#df3d2b, 0.5)), url('https://www.bairesdev.com/wp-content/uploads/2020/04/What-Separates-a-Good-Developer-from-a-Great-One-1024x683.png');
-  height: 50%;
+  background: url('https://www.bairesdev.com/wp-content/uploads/2020/04/What-Separates-a-Good-Developer-from-a-Great-One-1024x683.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  max-width: 400px;
+  border: 0 !important;
+}
+
+.hero-div {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .hero-text {
@@ -52,6 +58,17 @@ $spacers: (
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba($color: #ec5242, $alpha: 0.7);
+}
+
+$btn-border-radius: 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+hr {
+  opacity: 1;
+  background-color: #ec5242;
+  margin-left: 45%;
+  margin-right: 45%;
 }
 
 .div-light-bg {
@@ -67,8 +84,9 @@ $spacers: (
   max-width: 500px;
 }
 
-.tw-400 {
-  width: 400px !important;
+.tw-400,
+.tw-400-card {
+  max-width: 80vh !important;
 }
 
 .mw-60vh {
@@ -103,6 +121,121 @@ $spacers: (
   width: 50px;
 }
 
-$btn-border-radius: 0;
+.mobile-visible {
+  visibility: visible;
+}
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+.mobile-hidden {
+  visibility: hidden;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-logo {
+  justify-self: end;
+}
+
+.navbar-closer {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  right: 10px;
+}
+
+.navbar-collapse {
+  height: 100vh;
+}
+
+.mobile-destroy {
+  display: none;
+}
+
+//desk version with mobile first aproach
+@media screen and (min-width: 992px) {
+  .navbar-collapse {
+    height: auto;
+  }
+
+  .tw-400-card {
+    max-width: 30vh !important;
+  }
+
+  .bg-dark-hopacity {
+    flex-direction: column;
+    margin-right: 2px;
+    align-items: center;
+  }
+
+  .col-2 {
+    width: 50%;
+  }
+
+  .text-primary-card,
+  .text-p-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-visible {
+    visibility: hidden;
+  }
+
+  .mobile-hidden {
+    visibility: visible;
+  }
+
+  .mobile-destroy {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .presenters {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    column-gap: 10px;
+  }
+
+  .text-container-center {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-element-center {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h3,
+.h3 {
+  font-size: calc(1.2rem + 0.3vw);
+}
+
+.bar-logo {
+  filter: invert(1);
+  height: 14px;
+}
